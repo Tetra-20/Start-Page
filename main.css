@@ -1,0 +1,126 @@
+html * {
+	font-weight: bold !important; 
+	text-align: center !important; 
+	font-family: "ForcedSquare" !important;
+}
+
+@font-face {
+	font-family: ForcedSquare;
+	src: url(FORCED\ SQUARE.ttf);
+}
+
+body {
+	opacity: 0;
+	transition: opacity 3s;
+
+	background: url("/street-light.jpg") center center;
+	background-color: black;
+	background-size: 100vw 120vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+  	width: 100vw;
+  	margin: 0;
+
+	overflow-x: hidden;
+}	
+
+#GrayT {
+	transition: filter 0.25s ease-out;
+
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	-ms-interpolation-mode: nearest-neighbor;
+
+	width: 10vw;
+}
+
+#search {
+	transition: box-shadow 0.25s ease-in-out;
+	
+	background-color: black;
+
+	width: 50vw;
+	padding: 1vw;
+	
+	border-radius: 10px;
+	border-style: solid;
+	
+	font-size: 2em;
+	color: white;
+}
+#search:focus {
+	outline: none; 
+
+    box-shadow: 0 0 10px #FFFFFF;
+}
+
+.selector {
+	visibility: hidden;
+	display: contents;
+
+	vertical-align: top;
+
+	font-size: 30px;
+	color: white;
+
+	margin-top: -0.5vh;
+	margin-right: 0.5vw;
+}
+
+.linkbox {
+	/* shadow outline on select */
+	transition: filter 0.25s ease-out;
+	
+	border-radius: 5px;
+	
+	width: 10vw;
+	padding: 1vw;
+
+	margin-left: 0.5vw;
+	margin-right: 0.5vw;
+
+	background-color: #222222;
+	color: white;
+
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.title {
+	color: white;
+	font-size: 3vw;
+
+	margin-top: -1vh;
+	margin-bottom: 1vh;
+}
+
+.hyperlink {
+	text-decoration: none; 
+
+	font-size: 2vw;
+	color: gray;
+	transition: color 0.3s;
+}
+.hyperlink:hover {
+	text-decoration: none;
+
+	color: #DDDDDD;
+}
+.hyperlink:visited { text-decoration: none; }
+.hyperlink:active { 
+	text-decoration: none;
+
+	color: #BBBBBB;
+}
+#container { 
+	display: flex;
+		
+	margin-top: 5vh;
+}
