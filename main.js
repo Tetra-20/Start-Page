@@ -71,6 +71,7 @@ function select(pressedBoxNum) {
 
             links[selectedLinkIndex-1].innerHTML = `> ${links[selectedLinkIndex - 1].innerHTML}`
             let fontSize = 2
+            // add: change text size on window size change
             while (countLines(links[selectedLinkIndex-1]) > 1) {
                 fontSize = fontSize - 0.1
                 links[selectedLinkIndex-1].style = `font-size:${fontSize}vw;`
